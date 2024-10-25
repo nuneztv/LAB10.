@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="add.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="info">
+            <div class="date">
+                <div class="dateleft">
+                    <div id="dateNumber"></div>
+                </div>
+                <div class="colum">
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            
+            <div class="titles">
+                <div id="title"><p>To Do List</p></div>
+                <div id="dateText"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Add your task">
+            <button id="add-button">Add</button>
+        </div>
+        <p id="message" style="display:none;">Task saved successfully</p>
+        <div class="See">
+            <button id="see-button" onclick="redirectToToDoList()">See Tasks</button>
+        </div>
+    </div>
+  
+    <script src="add.js"></script>
+</body>
+</html>

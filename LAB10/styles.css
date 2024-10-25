@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body  {
+    font-family:"Lato", sans-serif;
+    background-image: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  .principal  {
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .info  {
+    display: flex;
+  }
+  hr  {
+    width: 100%;
+    height: 3px;
+    background-color: #F34348;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 35px;
+  }
+  .date  {
+    display: flex;
+    align-items: center;
+   
+  }
+  .dateleft  {
+    display: flex;
+    align-items: center;
+  }
+  #dateNumber  {
+    font-size: 60px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f2793c;
+  }
+ 
+  #dateMonth,
+  #dateNumber,
+  #dateText
+   {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  #dateMonth,
+  #dateYear  {
+    margin-left: 7px;
+    font-size: 20px;
+  }
+  .colum  {
+    display: inline-block;
+    text-align: center;
+  }
+  .names  {
+    display: flex;
+  }
+  #dateText  {
+    justify-content: right;
+    text-align: right;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #title   {
+    margin-left: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: #f22b52;
+  }
+  .titles  {
+    display: flex;
+    align-items: center;
+  }
+  #list-container  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  ul li  {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 80px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #fdfbfb;
+    box-shadow: 2px 0px 11px -4px rgba(87,87,87,1);
+    margin-top: 15px;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+  }
+  .unchecked::before  {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 30px;
+  }
+  ul li.checked  {
+    color: #555;
+    text-decoration: line-through;
+
+  }
+  ul li.checked::before {
+    background-image: url(./images/checked.png);
+    top: 7px;
+    left: 30px;
+  }
+  .empty  {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#f22b52;
+    display: flex;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  #completado  {
+    color:#f2793c;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  #pendiente {
+    color:#f2793c;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  .linea  {
+    width: 200px;
+    height: 2px;
+    background-color:#f22b52;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  #ety  {
+    margin-top: 7px;
+  }
+  .See  {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  #see-button  {
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    background: #f22b52;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  #see-button:hover {
+    background: #ec0069;
+  }
